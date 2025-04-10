@@ -4772,7 +4772,7 @@ private void countSort(int[] costs) {
 
 [Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/)<a name="teemo-attacking"></a>
 
-Self-explanatory code. Last hit is always going to stick so we add it's duration at the end. But for others, what we do is basically check current and the next time. If the difference is > duration, then the attack will stick and die of; there is no overlap. But if not, then the poison effect won't stick for the full duration. So, just take a minimum of the difference or the duration.
+Self-explanatory code. Last hit is always going to stick so we add it's duration at the end. But for others, what we do is basically check current and the next time. If the difference is > duration, then the attack will stick and die off; there is no overlap. But if not, then the poison effect won't stick for the full duration. So, just take a minimum of the difference or the duration and add it to total.
 
 ```java
 public int findPoisonedDuration(int[] timeSeries, int duration) {
